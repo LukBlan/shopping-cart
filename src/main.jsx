@@ -5,4 +5,4 @@ import {App} from "./component/App.jsx";
 const app = <App />
 const root = document.getElementById('root')
 const reactRoot = ReactDOM.createRoot(root);
-reactRoot.render(<React.StrictMode>{app}</React.StrictMode>,)
+reactRoot.render(<React.StrictMode>{app}</React.StrictMode>)

@@ -1,15 +1,8 @@
-import {Nav} from "./Nav/Nav.jsx";
-import {Footer} from "./Footer/Footer.jsx";
-import {ModuleHome} from "./ModuleHome/ModuleHome.jsx";
+import {RouterProvider} from "react-router-dom";
+import {router} from "../routes/router.jsx";
 
 function App() {
-  return (
-    <>
-      <Nav/>
-      <ModuleHome />
-      <Footer />
-    </>
-  )
+  return <RouterProvider router={router} />
 }
 
 export { App }

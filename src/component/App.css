@@ -1,0 +1,12 @@
+html, body {
+  min-height: 100vh;
+}
+
+body {
+  display: grid;
+}
+
+#root {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}

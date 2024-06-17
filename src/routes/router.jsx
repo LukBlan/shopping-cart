@@ -5,9 +5,9 @@ import {ModuleAboutUs} from "../component/ModuleAboutUs/ModuleAboutUs.jsx";
 import {ModuleShop} from "../component/ModuleShop/ModuleShop.jsx";
 
 const routes = [
-  {path: "/", element: <ModuleHome />},
-  {path: "/shop", element: <ModuleShop />},
-  {path: "/aboutUs", element: <ModuleAboutUs />},
+  {path: "/", element: <ModuleHome />, nav: false},
+  {path: "shop", element: <ModuleShop />, nav: true},
+  {path: "aboutUs", element: <ModuleAboutUs />, nav: true},
 ]
 
 const mapRoutes = createRoutesFromElements(
@@ -18,4 +18,4 @@ const mapRoutes = createRoutesFromElements(
 
 const router = createBrowserRouter(mapRoutes)
 
-export { router }
+export { routes, router }

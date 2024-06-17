@@ -1,0 +1,22 @@
+:root {
+  --black: black
+}
+
+nav {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: bold;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.nav-links {
+  text-decoration: none;
+  display: flex;
+  gap: 20px;
+}
+
+.link {
+  color: var(--black);
+  text-decoration: none;
+}

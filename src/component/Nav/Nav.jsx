@@ -7,7 +7,7 @@ function Nav() {
 
   routes.forEach(route => {
     if (route.nav) {
-      mapRoutes.push(<li key={route.path}><NavLink to={route.path}>{route.path}</NavLink></li>)
+      mapRoutes.push(<li key={route.path}><NavLink className="link" to={route.path}>{route.path}</NavLink></li>)
     }
   })
 

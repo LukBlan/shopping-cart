@@ -1,5 +1,5 @@
 import "./Nav.css"
-import {NavLink} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import {routes} from "../../routes/router.jsx";
 
 function Nav() {
@@ -11,10 +11,11 @@ function Nav() {
     }
   })
 
-    console.log(mapRoutes)
   return (
     <nav>
-      <h1>Shopping Cart</h1>
+      <Link className="link" to="/">
+        <h1 className="navbar-header">Shopping Cart</h1>
+      </Link>
 
       <ul className="nav-links">
         {mapRoutes}

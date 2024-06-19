@@ -1,19 +1,21 @@
-:root {
-  --black: black
-}
-
 nav {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  font-family: "alfa-slab-one", sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
-  justify-content: space-between;
   padding: 20px;
 }
 
+.navbar-header {
+  font-size: 3rem;
+}
+
 .nav-links {
-  text-decoration: none;
   display: flex;
-  gap: 20px;
+  text-decoration: none;
 }
 
 .link {

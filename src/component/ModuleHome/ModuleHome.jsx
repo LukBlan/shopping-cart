@@ -2,6 +2,7 @@ import "./ModuleHome.css"
 import {useEffect, useState} from "react";
 import {fetchProducts} from "../../services/fetch-products.js";
 import {ProductCard} from "../Utils/ProductCard/ProductCard.jsx";
+import {ProductLine} from "../Utils/ProductLine/ProductLine.jsx";
 
 function useProducts() {
   const [products, setProducts] = useState([])
@@ -17,10 +18,7 @@ function ModuleHome() {
   const { products } = useProducts();
 
   return (
-    <>
-      {products.map(product => <ProductCard key={product.id} product={product}/>)}
-    <div className="background-home-image"></div>
-    </>
+    <ProductLine products={products}/>
   )
 }
 

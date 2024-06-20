@@ -1,0 +1,20 @@
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(10, 20vw);
+  overflow: hidden;
+
+}
+
+.product-list div {
+  animation: moveToLeft 45s infinite alternate-reverse linear;
+}
+
+@keyframes moveToLeft {
+  0% {
+    transform: translateX(30%);
+  }
+
+  100% {
+    transform: translateX(-530%);
+  }
+}

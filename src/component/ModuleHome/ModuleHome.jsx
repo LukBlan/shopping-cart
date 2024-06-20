@@ -1,7 +1,6 @@
 import "./ModuleHome.css"
 import {useEffect, useState} from "react";
 import {fetchProducts} from "../../services/fetch-products.js";
-import {ProductCard} from "../Utils/ProductCard/ProductCard.jsx";
 import {ProductLine} from "../Utils/ProductLine/ProductLine.jsx";
 
 function useProducts() {
@@ -16,9 +15,10 @@ function useProducts() {
 
 function ModuleHome() {
   const { products } = useProducts();
+  const firstTenProducts = products.filter((product, index) => index < 10);
 
   return (
-    <ProductLine products={products}/>
+    <ProductLine products={firstTenProducts}/>
   )
 }
 

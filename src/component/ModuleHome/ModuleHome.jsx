@@ -18,7 +18,9 @@ function ModuleHome() {
   const firstTenProducts = products.filter((product, index) => index < 10);
 
   return (
-    <ProductLine products={firstTenProducts}/>
+    <main className="main-screen-container">
+      <ProductLine products={firstTenProducts}/>
+    </main>
   )
 }
 

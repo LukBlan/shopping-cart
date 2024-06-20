@@ -1,20 +1,10 @@
 .product-list {
   display: grid;
+  gap: 1rem;
   grid-template-columns: repeat(10, 20vw);
-  overflow: hidden;
-
+  flex: 0 0 30%;
 }
 
-.product-list div {
-  animation: moveToLeft 45s infinite alternate-reverse linear;
-}
-
-@keyframes moveToLeft {
-  0% {
-    transform: translateX(30%);
-  }
-
-  100% {
-    transform: translateX(-530%);
-  }
+.product-list:hover .image-product-card {
+  animation-play-state: paused;
 }

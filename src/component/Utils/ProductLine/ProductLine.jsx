@@ -1,10 +1,10 @@
-import {ProductCard} from "../ProductCard/ProductCard.jsx";
 import "./ProductLine.css"
+import {ImageProductCard} from "../ImageProductCard/ImageProductCard.jsx";
 
 function ProductLine({products}) {
   return (
     <ul className="product-list">
-      { products.map(product => <ProductCard key={product.id} product={product} />) }
+      { products.map(product => <ImageProductCard key={product.id} product={product} />) }
     </ul>
   )
 }

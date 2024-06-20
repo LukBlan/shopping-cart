@@ -9,7 +9,6 @@ function ProductCard({product}) {
       <p>{price}</p>
       <img className="product-image" src={image} alt={title}/>
     </div>
-
   )
 }
 

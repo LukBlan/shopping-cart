@@ -10,7 +10,7 @@ nav {
 }
 
 .navbar-header {
-  font-size: 3rem;
+  font-size: 1.2rem;
 }
 
 .nav-links {
@@ -21,4 +21,19 @@ nav {
 .link {
   color: var(--black);
   text-decoration: none;
+}
+
+.shopping-elements-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-button {
+  cursor: pointer;
+  height: 25px;
+}
+
+.svg-cart {
+  min-height: 100%;
 }

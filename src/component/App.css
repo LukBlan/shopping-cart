@@ -1,11 +1,12 @@
 @font-face {
   font-family:  "alfa-slab-one";
-  src: url("/alfa-slab-one.wff") format("wff")
+  src: url("/public/alfa-slab-one.ttf") format("ttf")
 }
 
 :root {
   --black: black;
   --white: white;
+  --light-grey: #eee;
 }
 
 * {

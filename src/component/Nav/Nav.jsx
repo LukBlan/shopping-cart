@@ -22,9 +22,9 @@ function Nav() {
         <ul className="nav-links">
           {mapRoutes}
         </ul>
-        <buton className="cart-button">
+        <button className="cart-button">
           <SvgCart />
-        </buton>
+        </button>
       </div>
 
     </nav>

@@ -5,6 +5,14 @@
   flex: 0 0 30%;
 }
 
+.product-list.move-to-left .image-product-card {
+  animation: moveToLeft 45s infinite alternate-reverse linear;
+}
+
+.product-list.move-to-right .image-product-card {
+  animation: moveToRight 45s infinite alternate-reverse linear;
+}
+
 .product-list:hover .image-product-card {
   animation-play-state: paused;
 }

@@ -1,5 +1,4 @@
 .image-product-card {
-  animation: moveToLeft 45s infinite alternate-reverse linear;
   width: 20vw;
   height: 100%;
   cursor: pointer;
@@ -15,10 +14,20 @@
 
 @keyframes moveToLeft {
   0% {
-    transform: translateX(50%);
+    transform: translateX(10%);
   }
 
   100% {
-    transform: translateX(-550%);
+    transform: translateX(-570%);
+  }
+}
+
+@keyframes moveToRight {
+  0% {
+    transform: translateX(-570%);
+  }
+
+  100% {
+    transform: translateX(10%);
   }
 }

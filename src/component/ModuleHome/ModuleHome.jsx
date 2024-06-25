@@ -9,7 +9,8 @@ function getLines(products, linesAmount, lineSize) {
   let currentIndex = 0;
 
   for (let i = 0; i < linesAmount; i++) {
-    allLines.push({line: [], code: i})
+    const animationClass = (i % 2 === 0) ? "move-to-left" : "move-to-right";
+    allLines.push({line: [], code: i, animationClass: animationClass})
   }
 
   for (let i = 0; i < products.length; i++) {
@@ -39,10 +40,9 @@ function ModuleHome() {
   const { products } = useProducts();
 
   const allLines = getLines(products, 2, 10)
-  console.log(allLines)
   return (
     <main className="main-screen-container">
-      {allLines.map(line => <ProductLine key={line.code} products={line.line} />)}
+      {allLines.map(line => <ProductLine key={line.code} products={line.line} animationClass={line.animationClass} />)}
     </main>
   )
 }

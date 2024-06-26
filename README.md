@@ -2,9 +2,10 @@
 Responsive mockup website where you can buy products 
 
 ## Features
-- Filter Categories
-- Search
-- Cart Storage
+- Product filters based on labels
+- More info modal when clicking in a product
+- Shopping cart storage to save shopping products even when the page is closed
+- Search products bar with recommendations based on text
 
 ## Languages
 - Html
@@ -13,6 +14,7 @@ Responsive mockup website where you can buy products
 
 ## Frameworks / Libraries
 - React
+- React Router
 
 ## Database
 - Firebase
@@ -20,4 +22,3 @@ Responsive mockup website where you can buy products
 ## Tools
 - npm
 - ESlint
-- react router

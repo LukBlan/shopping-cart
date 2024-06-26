@@ -1,0 +1,22 @@
+.add-cart-button {
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.svg-add {
+  background-color: transparent;
+  height: 40px;
+  fill: #1C274C;
+  transition: all 0.4s;
+}
+
+.add-cart-button:hover .svg-add {
+  transform: scale(1.1) rotate(90deg);
+  fill: #384575;
+}
+

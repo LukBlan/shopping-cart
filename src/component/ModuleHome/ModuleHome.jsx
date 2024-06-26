@@ -1,7 +1,7 @@
 import "./ModuleHome.css"
 import {useEffect, useState} from "react";
 import {fetchProducts} from "../../services/fetch-products.js";
-import {ProductLine} from "../Utils/ProductLine/ProductLine.jsx";
+import {ProductLine} from "./ProductLine/ProductLine.jsx";
 
 function getLines(products, linesAmount, lineSize) {
   const allLines = []

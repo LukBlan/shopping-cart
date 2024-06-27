@@ -1,7 +1,6 @@
 import "./HomePage.css"
-import {useEffect, useState} from "react";
-import {fetchProducts} from "../../api/fetch-products.js";
 import {ProductLine} from "../../components/ProductsLine/ProductLine.jsx";
+import {useProducts} from "../../hooks/use-products.js";
 
 function getLines(products, linesAmount, lineSize) {
   const allLines = []
@@ -24,16 +23,6 @@ function getLines(products, linesAmount, lineSize) {
   }
 
   return allLines;
-}
-
-function useProducts() {
-  const [products, setProducts] = useState([])
-
-  useEffect(() => {
-    fetchProducts().then(newProducts => setProducts(newProducts))
-  }, [])
-
-  return { products }
 }
 
 function HomePage() {

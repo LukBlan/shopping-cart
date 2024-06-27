@@ -1,6 +1,6 @@
 import "./ImageProductCard.css"
 import {useState} from "react";
-import {AddToCartButton} from "../AddToCartButton/AddToCartButton.jsx";
+import {AddToCartButton} from "../../Buttons/AddToCartButton/AddToCartButton.jsx";
 
 function ImageProductCard({ product }) {
   const { image } = product

@@ -1,4 +1,4 @@
-import {SvgAdd} from "../Svgs/SvgAdd.jsx";
+import {SvgAdd} from "../../Svgs/SvgAdd.jsx";
 import "./AddToCart.css"
 
 function AddToCartButton() {

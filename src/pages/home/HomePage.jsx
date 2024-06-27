@@ -1,7 +1,7 @@
-import "./ModuleHome.css"
+import "./HomePage.css"
 import {useEffect, useState} from "react";
-import {fetchProducts} from "../../services/fetch-products.js";
-import {ProductLine} from "./ProductLine/ProductLine.jsx";
+import {fetchProducts} from "../../api/fetch-products.js";
+import {ProductLine} from "../../component/ProductsLine/ProductLine.jsx";
 
 function getLines(products, linesAmount, lineSize) {
   const allLines = []
@@ -36,7 +36,7 @@ function useProducts() {
   return { products }
 }
 
-function ModuleHome() {
+function HomePage() {
   const { products } = useProducts();
 
   const allLines = getLines(products, 2, 10)
@@ -47,4 +47,4 @@ function ModuleHome() {
   )
 }
 
-export { ModuleHome }
+export { HomePage }

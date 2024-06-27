@@ -39,3 +39,31 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+@font-face {
+  font-family:  "alfa-slab-one";
+  src: url("/public/alfa-slab-one.ttf") format("ttf")
+}
+
+:root {
+  --black: black;
+  --white: white;
+  --light-grey: #eee;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+body {
+  display: grid;
+}
+
+#root {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}

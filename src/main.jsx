@@ -1,9 +1,10 @@
-import "./reset.css"
+import "./styles.css"
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import {App} from "./component/App.jsx";
+import {router} from "./router/router.jsx";
+import {RouterProvider} from "react-router-dom";
 
-const app = <App />
+const app = <React.StrictMode>{<RouterProvider router={router} /> }</React.StrictMode>
 const root = document.getElementById('root')
 const reactRoot = ReactDOM.createRoot(root);
-reactRoot.render(<React.StrictMode>{app}</React.StrictMode>)
+reactRoot.render(app)

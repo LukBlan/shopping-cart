@@ -1,22 +1,22 @@
-import {ModuleHome} from "../component/ModuleHome/ModuleHome.jsx";
+import {HomePage} from "../pages/home/HomePage.jsx";
 import {createBrowserRouter, createRoutesFromElements, Route} from "react-router-dom";
-import {WebsiteLayout} from "../layout/WebsiteLayout.jsx";
-import { ModuleShop } from "../component/ModuleShop/ModuleShop.jsx";
+import { ShopPage } from "../pages/shop/ShopPage.jsx";
+import {Root} from "../pages/Root.jsx";
 
 const routes = [
   {
     path: "/",
-    element: <ModuleHome />, nav: false,
+    element: <HomePage />, nav: false,
     children: [{
       path: ":id",
       element: <div>test</div>
     }]
   },
-  {path: "Shop", element: <ModuleShop />, nav: true},
+  {path: "Shop", element: <ShopPage />, nav: true},
 ]
 
 const mapRoutes = createRoutesFromElements(
-  <Route element={<WebsiteLayout />} >
+  <Route element={<Root />} >
     {routes.map(route =>
       <Route key={route.path} path={route.path} element={route.element} >
         {

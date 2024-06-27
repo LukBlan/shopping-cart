@@ -1,7 +1,7 @@
 import "./Nav.css"
 import { Link, NavLink } from "react-router-dom";
-import { routes } from "../../routes/router.jsx";
-import { SvgCart } from "../Utils/Svgs/SvgCart.jsx";
+import { routes } from "../../router/router.jsx";
+import { SvgCart } from "../Svgs/SvgCart.jsx";
 
 function Nav() {
   const mapRoutes = []

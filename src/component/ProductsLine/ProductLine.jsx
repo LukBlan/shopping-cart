@@ -1,5 +1,5 @@
 import "./ProductLine.css"
-import {ImageProductCard} from "../../Utils/ImageProductCard/ImageProductCard.jsx";
+import {ImageProductCard} from "../Cards/ImageProductCard/ImageProductCard.jsx";
 
 function ProductLine({products, animationClass}) {
   return (

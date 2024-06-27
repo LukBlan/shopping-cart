@@ -1,6 +1,6 @@
-import {Nav} from "../component/Nav/Nav.jsx";
+import {Nav} from "../components/Nav/Nav.jsx";
 import {Outlet} from "react-router-dom";
-import {Footer} from "../component/Footer/Footer.jsx";
+import {Footer} from "../components/Footer/Footer.jsx";
 
 function Root() {
   return (

@@ -4,14 +4,6 @@ import { routes } from "../../router/router.jsx";
 import { SvgCart } from "../Svgs/SvgCart.jsx";
 
 function Nav() {
-  const mapRoutes = []
-
-  routes.forEach(route => {
-    if (route.nav) {
-      mapRoutes.push(<li key={route.path}><NavLink className="link" to={route.path}>{route.path}</NavLink></li>)
-    }
-  })
-
   return (
     <nav>
       <Link className="link" to="/">
@@ -20,8 +12,13 @@ function Nav() {
 
       <div className="shopping-elements-container">
         <ul className="nav-links">
-          {mapRoutes}
+          {routes.map(
+            route => (route.nav) ?
+              <li key={route.path}><NavLink className="link" to={route.path}>{route.path}</NavLink></li> :
+              <></>
+          )}
         </ul>
+
         <button className="cart-button">
           <SvgCart />
         </button>

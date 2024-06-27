@@ -2,6 +2,7 @@ import {HomePage} from "../pages/home/HomePage.jsx";
 import {createBrowserRouter, createRoutesFromElements, Route} from "react-router-dom";
 import { ShopPage } from "../pages/shop/ShopPage.jsx";
 import {Root} from "../pages/Root.jsx";
+import {ProductModal} from "../components/Modals/ProductModal.jsx";
 
 const routes = [
   {
@@ -9,7 +10,7 @@ const routes = [
     element: <HomePage />, nav: false,
     children: [{
       path: ":id",
-      element: <div>test</div>
+      element: <ProductModal />
     }]
   },
   {path: "Shop", element: <ShopPage />, nav: true},

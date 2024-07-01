@@ -8,12 +8,16 @@ const routes = [
   {
     path: "/",
     element: <HomePage />, nav: false,
+  },
+  {
+    path: "Shop",
+    element: <ShopPage />,
+    nav: true,
     children: [{
       path: ":id",
       element: <ProductModal />
     }]
   },
-  {path: "Shop", element: <ShopPage />, nav: true},
 ]
 
 const mapRoutes = createRoutesFromElements(

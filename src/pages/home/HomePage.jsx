@@ -1,7 +1,6 @@
 import "./HomePage.css"
 import { ProductLine } from "../../components/ProductsLine/ProductLine.jsx";
-import { useProducts } from "../../hooks/use-products.js";
-import { Outlet } from "react-router-dom";
+import { useOutletContext} from "react-router-dom";
 
 function getLines(products, linesAmount, lineSize) {
   const allLines = []
@@ -27,13 +26,12 @@ function getLines(products, linesAmount, lineSize) {
 }
 
 function HomePage() {
-  const { products } = useProducts();
-
+  const [products] = useOutletContext();
   const allLines = getLines(products, 2, 10)
+
   return (
     <main className="main-screen-container">
       {allLines.map(line => <ProductLine key={line.code} products={line.line} animationClass={line.animationClass} />)}
-      <Outlet context={[products]} />
     </main>
   )
 }

@@ -4,11 +4,11 @@ function ProductCard({product}) {
   const {title, price, image} = product
 
   return (
-    <div>
+    <li className="product-card">
       <h2>{title}</h2>
       <p>{price}</p>
-      <img className="product-image" src={image} alt={title}/>
-    </div>
+      <img className="product-card-image" src={image} alt={title}/>
+    </li>
   )
 }
 

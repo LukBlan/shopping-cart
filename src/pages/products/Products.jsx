@@ -1,6 +1,6 @@
 import {Outlet, useOutletContext} from "react-router-dom";
 
-function ShopPage() {
+function Products() {
   const products = useOutletContext();
 
   return (
@@ -11,4 +11,4 @@ function ShopPage() {
   )
 }
 
-export { ShopPage }
+export { Products }

@@ -10,7 +10,7 @@ function ImageProductCard({ product }) {
   const toggleMouseOver = () => setMouseOver(!mouseOver)
 
   return (
-    <Link to={`/shop/${id}`}>
+    <Link to={`/products/${id}`}>
       <li className="image-product-card" onMouseEnter={toggleMouseOver} onMouseLeave={toggleMouseOver}>
         <img className="product-image" src={image} />
         <AddToCartButton />

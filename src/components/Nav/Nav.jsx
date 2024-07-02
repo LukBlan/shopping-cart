@@ -15,7 +15,7 @@ function Nav() {
         <ul className="nav-links">
           {routes.map(
             (route, index) => (route.nav) ?
-              <li key={index}><NavLink className="link" to={route.path}>{route.path}</NavLink></li> :
+              <li key={index}><NavLink className="link" to={route.path}>{route.name}</NavLink></li> :
               <Fragment key={index}></Fragment>
           )}
         </ul>

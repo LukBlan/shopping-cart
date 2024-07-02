@@ -1,6 +1,6 @@
 import {HomePage} from "../pages/home/HomePage.jsx";
 import {createBrowserRouter, createRoutesFromElements, Route} from "react-router-dom";
-import { ShopPage } from "../pages/shop/ShopPage.jsx";
+import { Products } from "../pages/products/Products.jsx";
 import {Root} from "../pages/Root.jsx";
 import {ProductModal} from "../components/Modals/ProductModal.jsx";
 
@@ -10,8 +10,9 @@ const routes = [
     element: <HomePage />, nav: false,
   },
   {
-    path: "Shop",
-    element: <ShopPage />,
+    path: "products",
+    name: "Shop",
+    element: <Products />,
     nav: true,
     children: [{
       path: ":id",

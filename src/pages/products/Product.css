@@ -1,9 +1,7 @@
 .products-section {
   display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(auto-fit, 150px);
-  grid-template-rows: repeat(auto-fit, 250px);
-  gap: 10px 10px;
-  padding: 2rem;
+  grid-template-columns: repeat(4, 20%);
+  justify-content: space-around;
+  grid-template-rows: repeat(5,300px);
+  gap: 2rem 2rem;
 }
-

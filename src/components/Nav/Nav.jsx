@@ -1,9 +1,9 @@
 import "./Nav.css"
 import { Link } from "react-router-dom";
-import { SvgCart } from "../Svgs/SvgCart.jsx";
 import {NavbarLinks} from "./NavbarLinks.jsx";
+import {CartButton} from "../Buttons/Cartbutton/CartButton.jsx";
 
-function Nav() {
+function Nav({toggleCart, totalItems}) {
   return (
     <nav>
       <Link className="link" to="/">
@@ -13,9 +13,7 @@ function Nav() {
       <div className="shopping-elements-container">
         <NavbarLinks />
 
-        <button className="cart-button">
-          <SvgCart />
-        </button>
+        <CartButton toggleCart={toggleCart} totalItems={totalItems} />
       </div>
 
     </nav>

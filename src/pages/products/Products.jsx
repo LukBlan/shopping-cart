@@ -5,7 +5,6 @@ import "./Product.css"
 
 function Products() {
   const [products] = useOutletContext();
-  console.log(products)
 
   return (
     <>

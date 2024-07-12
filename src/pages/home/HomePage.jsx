@@ -30,10 +30,10 @@ function HomePage() {
   const allLines = getLines(products, 2, 10)
 
   return (
-    <main className="main-screen-container">
-      {allLines.map(line => <ProductLine key={line.code} products={line.line} animationClass={line.animationClass} />)}
-    </main>
+    allLines.map(line => <ProductLine key={line.code} products={line.line} animationClass={line.animationClass} />)
   )
-}
 
+
+
+}
 export { HomePage }

@@ -20,6 +20,7 @@
 }
 
 .product-image {
+  color: white;
   object-fit: contain;
   height: 0;
   min-height: 100%;

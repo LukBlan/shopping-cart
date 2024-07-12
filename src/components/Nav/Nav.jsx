@@ -1,8 +1,7 @@
 import "./Nav.css"
-import { Link, NavLink } from "react-router-dom";
-import { routes } from "../../router/router.jsx";
+import { Link } from "react-router-dom";
 import { SvgCart } from "../Svgs/SvgCart.jsx";
-import {Fragment} from "react";
+import {NavbarLinks} from "./NavbarLinks.jsx";
 
 function Nav() {
   return (
@@ -12,13 +11,7 @@ function Nav() {
       </Link>
 
       <div className="shopping-elements-container">
-        <ul className="nav-links">
-          {routes.map(
-            (route, index) => (route.nav) ?
-              <li key={index}><NavLink className="link" to={route.path}>{route.name}</NavLink></li> :
-              <Fragment key={index}></Fragment>
-          )}
-        </ul>
+        <NavbarLinks />
 
         <button className="cart-button">
           <SvgCart />

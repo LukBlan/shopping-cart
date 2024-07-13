@@ -1,8 +1,9 @@
 .product-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   min-height: 200px;
-  border: 1px solid rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 4px rgba(0,0,0,0.4);
 }
 
 .product-card-title {
@@ -11,6 +12,8 @@
 }
 
 .product-card-image-container {
+  margin-top: auto;
+  margin-bottom: auto;
   height: 60%;
 }
 
@@ -21,4 +24,14 @@
   min-height: 100%;
   width: 0;
   min-width: 100%;
+}
+
+.product-tag {
+  color: #0b910b;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin: 1rem;
 }

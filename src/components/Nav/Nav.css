@@ -34,6 +34,7 @@ nav {
 }
 
 .cart-button {
+  position: relative;
   border: none;
   background-color: var(--white);
   padding: 6px;
@@ -49,6 +50,13 @@ nav {
 
 .svg-cart {
   height: 30px;
+}
+
+.cart-counter {
+  height: min-content;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 @media (min-width: 768px) {

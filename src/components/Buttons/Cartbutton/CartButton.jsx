@@ -5,7 +5,7 @@ function CartButton({totalItems, toggleCart}) {
     <button onClick={toggleCart} className="cart-button">
       <SvgCart />
 
-      <span>{totalItems()}</span>
+      <span className="cart-counter">{totalItems()}</span>
     </button>
   )
 }

@@ -6,7 +6,10 @@ function AddToCartButton({id}) {
   const [products, addToCart] = useOutletContext();
 
   return (
-    <button className="add-cart-button" onClick={() => addToCart(id)}>
+    <button className="add-cart-button" onClick={(event) => {
+      event.preventDefault();
+      addToCart(id)
+    }}>
       <SvgAdd />
     </button>
   )

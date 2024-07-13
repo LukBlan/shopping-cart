@@ -1,7 +1,7 @@
 .products-section {
   display: grid;
-  grid-template-columns: repeat(4, 20%);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-content: space-around;
-  grid-template-rows: repeat(5,300px);
-  gap: 2rem 2rem;
+  gap: 2rem;
+  padding: 2rem;
 }

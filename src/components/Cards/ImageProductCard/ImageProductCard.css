@@ -3,6 +3,9 @@
   width: 20vw;
   height: 100%;
   cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: 1px 2px 0px rgba(0,0,0,0.3);
 }
 
 .image-product-card::after {
@@ -12,6 +15,7 @@
   bottom: 0;
   left: 0;
   right: 0;
+  border-radius: 10px;
   transition: background-color 0.3s;
 }
 
@@ -25,7 +29,6 @@
   height: 0;
   min-height: 100%;
   width: 100%;
-  box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.2);
   padding: 10px;
 }
 

@@ -1,6 +1,11 @@
+import {CartItemCard} from "../Cards/CartItemCard/CartItemCard.jsx";
+
 function CartList({cart}) {
-  console.log(cart)
-  return <p>Test</p>
+  return (
+    <ul>
+      {cart.map(cartItem => <CartItemCard key={cartItem.product.title} cartItem={cartItem} />)}
+    </ul>
+  )
 }
 
 export { CartList }

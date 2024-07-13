@@ -1,8 +1,11 @@
 import {CartItemCard} from "../Cards/CartItemCard/CartItemCard.jsx";
+import "./CartList.css"
 
-function CartList({cart}) {
+function CartList({cart, showCart}) {
+  const activeCart = showCart ? "grow" : "shrink"
+
   return (
-    <ul>
+    <ul className={`cart-list ${activeCart}`}>
       {cart.map(cartItem => <CartItemCard key={cartItem.product.title} cartItem={cartItem} />)}
     </ul>
   )

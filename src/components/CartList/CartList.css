@@ -1,0 +1,26 @@
+.cart-list {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: 3;
+  transition: max-width 0.3s;
+  border-left: 1px solid rgba(0,0,0,0.3);
+  overflow: hidden;
+}
+
+.grow {
+  padding: 2rem;
+  max-width: 400px;
+}
+
+.shrink {
+  padding: 0;
+  max-width: 0;
+  color: white;
+}
+
+.cart-list .product-card-image {
+  height: 100px;
+}

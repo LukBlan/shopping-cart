@@ -29,7 +29,7 @@ function Root() {
       <Nav cart={cart} toggleCart={toggleCart} totalItems={totalItems}/>
 
       <main className="main-screen-container">
-        { showCart && <CartList cart={cart} /> }
+        <CartList cart={cart} showCart={showCart} />
         <Outlet context={[products, addToCart]}/>
       </main>
     </>

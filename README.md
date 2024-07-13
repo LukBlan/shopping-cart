@@ -15,10 +15,3 @@ Responsive mockup website where you can buy products
 ## Frameworks / Libraries
 - React
 - React Router
-
-## Database
-- Firebase
-
-## Tools
-- npm
-- ESlint

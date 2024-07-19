@@ -22,3 +22,8 @@
   transition: all 0.4s;
 }
 
+@media (min-width: 1620px) {
+  .svg-add {
+    height: 70px;
+  }
+}

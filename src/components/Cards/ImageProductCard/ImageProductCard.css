@@ -6,6 +6,7 @@
   border-radius: 10px;
   border: 1px solid black;
   box-shadow: 1px 2px 0px rgba(0,0,0,0.3);
+  background-color: white;
 }
 
 .image-product-card::after {
@@ -23,6 +24,10 @@
   background-color: rgba(0,0,0,0.1);
 }
 
+.image-product-card:hover .product-image {
+  transform: scale(1.05);
+}
+
 .product-image {
   color: white;
   object-fit: contain;
@@ -30,7 +35,15 @@
   min-height: 100%;
   width: 100%;
   padding: 10px;
+  transition: transform 0.3s;
 }
+
+@media (min-width: 480px) {
+  .product-image {
+    padding: 15px;
+  }
+}
+
 
 @keyframes moveToLeft {
   0% {

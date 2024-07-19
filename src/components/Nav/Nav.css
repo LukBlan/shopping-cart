@@ -2,12 +2,12 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--white);
+  background-color: var(--black);
   font-family: "alfa-slab-one", sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
-  padding: 15px;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
 }
 
 .nav-header {
@@ -23,7 +23,7 @@ nav {
   display: flex;
   align-items: center;
   font-size: 1.2rem;
-  color: var(--black);
+  color: var(--white);
   text-decoration: none;
 }
 
@@ -36,16 +36,16 @@ nav {
 .cart-button {
   position: relative;
   border: none;
-  background-color: var(--white);
+  background-color: black;
   padding: 6px;
   display: flex;
   cursor: pointer;
-  border-radius: 100%;
+  border-radius: 1rem;
   transition: background-color 0.3s;
 }
 
 .cart-button:hover {
-  background-color: var(--light-grey);
+  background-color: #181818
 }
 
 .svg-cart {
@@ -53,6 +53,7 @@ nav {
 }
 
 .cart-counter {
+  color: white;
   height: min-content;
   position: absolute;
   right: 0;
@@ -74,5 +75,18 @@ nav {
 
   .svg-cart {
     height: 40px;
+  }
+}
+
+@media (min-width: 1620px) {
+  nav {
+    padding: 2rem;
+  }
+  .nav-header {
+    font-size: 3rem;
+  }
+
+  .link {
+    font-size: 3rem;
   }
 }

@@ -1,6 +1,7 @@
 import "./HomePage.css"
 import { ProductLine } from "../../components/ProductsLine/ProductLine.jsx";
 import { useOutletContext} from "react-router-dom";
+import React from "react"
 
 function getLines(products, linesAmount, lineSize) {
   const allLines = []

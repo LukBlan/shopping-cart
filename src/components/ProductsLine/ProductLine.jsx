@@ -1,5 +1,6 @@
 import "./ProductLine.css"
 import {ImageProductCard} from "../Cards/ImageProductCard/ImageProductCard.jsx";
+import React from "react"
 
 function ProductLine({products, animationClass}) {
   return (

@@ -1,3 +1,5 @@
+import React from "react"
+
 function SvgCart() {
   return (
     <svg className="svg-cart" viewBox="0 -0.5 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">

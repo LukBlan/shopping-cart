@@ -1,4 +1,5 @@
 import {CartItemCard} from "../Cards/CartItemCard/CartItemCard.jsx";
+import React from "react"
 import "./CartList.css"
 
 function CartList({cart, showCart}) {

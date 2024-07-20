@@ -1,4 +1,5 @@
 import {SvgCart} from "../../Svgs/SvgCart.jsx";
+import React from "react"
 
 function CartButton({totalItems, toggleCart}) {
   return (

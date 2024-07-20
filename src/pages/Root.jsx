@@ -3,6 +3,7 @@ import {Outlet} from "react-router-dom";
 import {useProducts} from "../hooks/use-products.js";
 import {useState} from "react";
 import {CartList} from "../components/CartList/CartList.jsx";
+import React from "react"
 
 function Root() {
   const { products } = useProducts();

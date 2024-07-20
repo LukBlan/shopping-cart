@@ -2,6 +2,7 @@ import "./Nav.css"
 import { Link } from "react-router-dom";
 import {NavbarLinks} from "./NavbarLinks.jsx";
 import {CartButton} from "../Buttons/Cartbutton/CartButton.jsx";
+import React from "react"
 
 function Nav({toggleCart, totalItems}) {
   return (

@@ -2,6 +2,7 @@ import "./ImageProductCard.css"
 import {useState} from "react";
 import {AddToCartButton} from "../../Buttons/AddToCartButton/AddToCartButton.jsx";
 import { Link } from "react-router-dom";
+import React from "react"
 
 function ImageProductCard({ product }) {
   const { image, id, title} = product

@@ -3,6 +3,7 @@ import {createBrowserRouter} from "react-router-dom";
 import { Products } from "../pages/products/Products.jsx";
 import {Root} from "../pages/Root.jsx";
 import {ProductModal} from "../components/Modals/ProductModal.jsx";
+import React from "react"
 
 const routes = [
   {

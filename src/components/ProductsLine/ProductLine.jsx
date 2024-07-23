@@ -4,7 +4,7 @@ import React from "react"
 
 function ProductLine({products, animationClass}) {
   return (
-    <ul className={`product-list ${animationClass}`}>
+    <ul role="product-list" className={`product-list ${animationClass}`}>
       { products.map(product => <ImageProductCard key={product.id} product={product} />) }
     </ul>
   )

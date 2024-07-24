@@ -1,4 +1,5 @@
 import "./ProductCard.css"
+import React from "react"
 
 function ProductCard({product}) {
   const {title, price, image} = product

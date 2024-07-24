@@ -3,7 +3,7 @@ import React from "react"
 
 function CartButton({totalItems, toggleCart}) {
   return (
-    <button onClick={toggleCart} className="cart-button">
+    <button role="cart-button" onClick={toggleCart} className="cart-button">
       <SvgCart />
 
       <span className="cart-counter">{totalItems()}</span>

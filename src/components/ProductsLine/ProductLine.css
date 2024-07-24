@@ -16,3 +16,9 @@
 .product-list:hover .image-product-card {
   animation-play-state: paused;
 }
+
+@media (max-width: 480px) {
+  .product-list {
+    grid-template-columns: repeat(10, 50vw);
+  }
+}

@@ -45,6 +45,13 @@
   }
 }
 
+@media (max-width: 480px) {
+  .image-product-card {
+    width: 50vw;
+  }
+}
+
+
 
 @keyframes moveToLeft {
   0% {

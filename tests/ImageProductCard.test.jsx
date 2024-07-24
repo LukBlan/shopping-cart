@@ -1,8 +1,6 @@
 import {
   cleanup,
   findAllByRole,
-  findByAltText,
-  getByAltText,
   getByRole,
   getByText,
   render,
@@ -53,8 +51,6 @@ describe('ImageProductCard', () => {
     const alt = getByRole(products[0], "img", ).alt
     const addButtons = await findAllByRole(firstList, "add-cart-button", {name: ""}, {timeout: 5000})
     const firstButton = addButtons[0];
-    const cartButton = screen.getByRole("cart-button")
-
 
     await user.click(firstButton)
     const cartList = screen.getByRole("cart-list")

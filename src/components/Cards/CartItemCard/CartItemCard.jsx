@@ -7,7 +7,7 @@ function CartItemCard({cartItem}) {
   return (
     <>
       <ProductCard product={product} />
-      <p>{amount}</p>
+      <p className="product-amount-counter">x{amount}</p>
     </>
   )
 }

@@ -11,6 +11,8 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video, button {
+  scrollbar-color: #1c1c1c #eee;
+  scrollbar-width: thin;
   margin: 0;
   padding: 0;
   border: 0;
@@ -67,3 +69,8 @@ body {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
 }
+
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: white; }
+::-webkit-scrollbar-thumb { background: red; }
+::-webkit-scrollbar-thumb:hover { background: tomato; }

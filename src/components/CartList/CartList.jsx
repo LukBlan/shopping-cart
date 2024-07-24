@@ -6,7 +6,7 @@ function CartList({cart, showCart}) {
   const activeCart = showCart ? "grow" : "shrink"
 
   return (
-    <ul className={`cart-list ${activeCart}`}>
+    <ul role="cart-list" className={`cart-list ${activeCart}`}>
       {cart.map(cartItem => <CartItemCard key={cartItem.product.title} cartItem={cartItem} />)}
     </ul>
   )

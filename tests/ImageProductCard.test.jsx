@@ -1,4 +1,13 @@
-import {cleanup, findAllByRole, getByRole, getByText, render, screen} from '@testing-library/react';
+import {
+  cleanup,
+  findAllByRole,
+  findByAltText,
+  getByAltText,
+  getByRole,
+  getByText,
+  render,
+  screen
+} from '@testing-library/react';
 import {describe, it, expect, afterEach} from "vitest"
 import {createMemoryRouter, RouterProvider} from "react-router-dom";
 import React from "react"
@@ -35,4 +44,20 @@ describe('ImageProductCard', () => {
     expect(cartCounter.textContent).toBe("1")
   })
 
+  it("should add correct product to cart", async () => {
+    const user = userEvent.setup()
+    const router = createMemoryRouter(routes);
+    render(<RouterProvider router={router} />)
+    const firstList = await screen.getAllByRole("product-list", {name: ""})[0]
+    const products = await findAllByRole(firstList, "listitem", {name: ""}, {timeout: 5000})
+    const alt = getByRole(products[0], "img", ).alt
+    const addButtons = await findAllByRole(firstList, "add-cart-button", {name: ""}, {timeout: 5000})
+    const firstButton = addButtons[0];
+    const cartButton = screen.getByRole("cart-button")
+
+
+    await user.click(firstButton)
+    const cartList = screen.getByRole("cart-list")
+    expect(getByText(cartList, alt).textContent).toBe(alt)
+  })
 });
